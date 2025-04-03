@@ -1,4 +1,4 @@
-<h2 align="left">Stats seems like I am a ML Engineer</h2>
+<h2 align="left">Stats says I am a ML Engineer.</h2>
 
 ###
 
