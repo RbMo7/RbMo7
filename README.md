@@ -1,4 +1,4 @@
-<h2 align="left">Stats says I am a ML Engineer but trust me I do web.</h2>
+<h2 align="left">My proficiency is not related to any tech stack but with my adaptability to any.</h2>
 
 ###
 
