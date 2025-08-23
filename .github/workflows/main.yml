@@ -1,6 +1,5 @@
 name: Metrics
 on:
-  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
   push: {branches: ["master", "main"]}
@@ -9,7 +8,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     environment: 
-      name: Metrics   # matches your environment name
+      name: Metrics
     permissions:
       contents: write
     steps:
@@ -27,7 +26,7 @@ jobs:
         run: echo "${{ secrets.METRICS_TOKEN }}" > token.txt
 
       - name: Upload token for debugging
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # Updated to v4
         with:
           name: debug-token
           path: token.txt
@@ -36,4 +35,3 @@ jobs:
       - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-
