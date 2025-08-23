@@ -11,15 +11,19 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
-    permissions:
-      contents: write
     steps:
-      - name: Install dependencies
+      - name: Install nokogiri build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y xz-utils
+          sudo apt-get install -y \
+            build-essential \
+            patch \
+            ruby-dev \
+            zlib1g-dev \
+            liblzma-dev \
+            libxml2-dev \
+            libxslt1-dev \
+            xz-utils
 
       - uses: RbMo7/metrics@master
         with:
