@@ -1,5 +1,4 @@
 name: Metrics
-
 on:
   # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
@@ -7,24 +6,14 @@ on:
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
-
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
     steps:
-      - name: Install nokogiri build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            build-essential \
-            patch \
-            ruby-dev \
-            zlib1g-dev \
-            liblzma-dev \
-            libxml2-dev \
-            libxslt1-dev \
-            xz-utils
-
       - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
