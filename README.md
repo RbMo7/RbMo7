@@ -11,7 +11,6 @@
 
   <!-- Second row -->
   <img src="/metrics.plugin.wakatime.svg" alt="WakaTime Activity" width="500" />
-  <img src="/metrics.plugin.activity.svg" alt="Overall Activity" width="450" />
 
 </div>
 
