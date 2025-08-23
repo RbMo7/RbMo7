@@ -1,6 +1,6 @@
-<h2 align="left">
+<h3 align="left">
   My proficiency is not related to any tech stack but with my adaptability to any.
-</h2>
+</h3>
 
 <!-- Metrics Grid -->
 <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: center;">
