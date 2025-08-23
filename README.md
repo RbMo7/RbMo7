@@ -10,7 +10,7 @@
   <img src="/metrics.plugin.isocalendar.fullyear.svg" alt="Commit History" width="450" />
 
   <!-- Second row -->
-  <img src="/metrics.plugin.wakatime.svg" alt="WakaTime Activity" width="500" />
+  [!Wakatime](/)
 
 </div>
 
