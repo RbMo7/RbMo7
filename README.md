@@ -8,7 +8,7 @@
 
 <!-- GitHub Metrics Section -->
 <h3 align="center">📊 GitHub Metrics</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: center; margin-bottom: 40px;">
+<div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center; margin-bottom: 40px;">
 
   <!-- Row 1 -->
   <img src="/github-metrics.svg" alt="GitHub Metrics" width="450" />
