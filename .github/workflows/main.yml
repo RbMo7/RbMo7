@@ -2,18 +2,38 @@ name: Metrics
 on:
   # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     environment: 
-      name: production
+      name: Metrics   # matches your environment name
     permissions:
       contents: write
     steps:
+      # Step to safely check if the secret exists
+      - name: Check METRICS_TOKEN
+        run: |
+          if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "METRICS_TOKEN is empty!"
+          else
+            echo "METRICS_TOKEN is set!"
+          fi
+
+      # Optional: Temporarily write token to file for debugging (download as artifact)
+      - name: Debug METRICS_TOKEN
+        run: echo "${{ secrets.METRICS_TOKEN }}" > token.txt
+
+      - name: Upload token for debugging
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-token
+          path: token.txt
+
+      # Run the metrics action
       - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+
