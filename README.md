@@ -3,9 +3,6 @@
 ###
 ![Metrics](/github-metrics.svg)
 ###
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
-</picture>
 
 <br clear="both">
 <img src="https://raw.githubusercontent.com/RbMo7/RbMo7/output/snake.svg" alt="Snake animation" />
