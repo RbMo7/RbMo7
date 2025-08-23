@@ -25,6 +25,6 @@ jobs:
             libxslt1-dev \
             xz-utils
 
-      - uses: RbMo7/metrics@master
+      - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
