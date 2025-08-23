@@ -1,21 +1,30 @@
 <!-- Intro Section -->
 <h2 align="center">
-  My proficiency is not related to any tech stack <br>
-  but with my adaptability to any.
+  Adaptable across any tech stack
 </h2>
 
 <br>
 
 <!-- GitHub Metrics Section -->
-<h3 align="center">📊 GitHub Metrics</h3>
+<h3 align="center">📊 GitHub Stats</h3>
 <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center; margin-bottom: 40px;">
 
   <!-- Row 1 -->
-  <img src="/github-metrics.svg" alt="GitHub Metrics" width="450" />
-  <img src="/metrics.plugin.isocalendar.fullyear.svg" alt="Commit History" width="450" />
+  <div style="text-align: center;">
+    <img src="/github-metrics.svg" alt="GitHub Metrics" width="450" />
+    <p style="margin-top: 5px; font-size: 14px; color: #555;">GitHub Metrics</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="/metrics.plugin.isocalendar.fullyear.svg" alt="Commit History" width="450" />
+    <p style="margin-top: 5px; font-size: 14px; color: #555;">Commit History</p>
+  </div>
 
   <!-- Row 2 -->
-  <img src="/metrics.plugin.wakatime.svg" alt="WakaTime Activity" width="550" />
+  <div style="text-align: center; width: 100%;">
+    <img src="/metrics.plugin.wakatime.svg" alt="WakaTime Activity" width="550" />
+    <p style="margin-top: 5px; font-size: 14px; color: #555;">WakaTime Activity</p>
+  </div>
 
 </div>
 
