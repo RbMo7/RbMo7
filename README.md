@@ -3,6 +3,7 @@
 ###
 ![Metrics](/github-metrics.svg)
 ###
+![Commit_history](/metrics.plugin.isocalendar.fullyear.svg)
 
 <br clear="both">
 <img src="https://raw.githubusercontent.com/RbMo7/RbMo7/output/snake.svg" alt="Snake animation" />
