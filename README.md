@@ -20,12 +20,6 @@
     <p style="margin-top: 5px; font-size: 14px; color: #555;">Commit History</p>
   </div>
 
-  <!-- Row 2 -->
-  <div style="display: block; text-align: center; margin-top: 20px;">
-    <img src="/metrics.plugin.wakatime.svg" alt="WakaTime Activity" width="550" />
-    <p style="margin-top: 5px; font-size: 14px; color: #555;">WakaTime Activity</p>
-  </div>
-
 </div>
 
 <br clear="both">
